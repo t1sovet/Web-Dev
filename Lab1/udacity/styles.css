@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #de9a9a;
+    text-align: center;
+}
+#unique-paragraph1 {
+    color: #abebc3;
+    font-size: 18px;
+    margin: 20px;
+    font-weight: bold;
+}
+#unique-paragraph2 {
+    color: #abdc42;
+    background-color: black;
+    font-size: 12px;
+    margin: 20px;
+    font-weight: initial;
+}
