@@ -1,0 +1,104 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 320px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.inputs {
+    padding: 20px 20px 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    justify-content: center;
+    box-shadow: #344e75 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 3px 1px;
+}
+
+.field {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.but {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.but:hover {
+    background-color: lightblue;
+}
+
+.forgot-account {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.create-account {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background-color: lightgreen;
+}
+
+span {
+    font-weight: bold;
+}
+
+.right-part p {
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 250px;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+}
