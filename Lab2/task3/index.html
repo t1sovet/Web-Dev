@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="head">
         <h1>Try the Copilot-powered platform</h1>
         <p>
             We get it, there's a lot you can do with GitHub.
@@ -16,31 +16,68 @@
             Copilot,
             and Advanced Security.
         </p>
-        <a class="btn">
+        <a class="bl-btn">
             Start free for 30 days
         </a>
-    </div>
+    </header>
     <div class="cards">
         <div class="pricing-card">
-            <h2>Free</h2>
-            <p>The basics for individuals
-                and organizations</p>
-            <span class="pricing-block">
-                <span class="price">
-                    <sup>$</sup>
-                    <span class="number">0</span>
-                    <span class="curency">USD</span>
+            <section class="prising-card-head">
+                <h2>Free</h2>
+                <p>The basics for individuals<br>
+                    and organizations</p>
+                <span class="pricing-block">
+                    <span class="price">
+                        <sup>$</sup>
+                        <span class="number">0</span>
+                        <span class="curency">USD</span>
+                    </span>
+                    <span class="per-user">per user/month</span>
                 </span>
-                <span class="per-user">per user/month</span>
-            </span>
+            </section>
             <a class="wh-btn">
-                Get started for free
+                Create a free organization
             </a>
-
+            <section class="options">
+                <div class="option-list">
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Unlimited public/private
+                            repositories</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Dependant
+                            security</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">2,000
+                            CI/CD
+                            minutes/month</span></div>
+                    <p>Free for public repositories</p>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">500MB of
+                            Packagesstorage</span></div>
+                    <p>Free for public repositories</p>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Issues &
+                            Projects</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Community
+                            support</span></div>
+                </div>
+                <h4>FEATURED ADD-ONS</h4>
+                <div class="option-list">
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">GitHub
+                            Copilot
+                            Access</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">GitHub
+                            Codespaces
+                            Access</span></div>
+                </div>
+            </section>
         </div>
         <div class="pricing-card">
             <h2>Team</h2>
-            <p>Advanced collaboration for
+            <p>Advanced collaboration for<br>
                 individuals and organizations</p>
             <span class="pricing-block">
                 <span class="price">
@@ -53,12 +90,69 @@
             <a class="bl-btn">
                 Continue with team
             </a>
+            <section class="options">
+                <div id="everything-included"><img id="arrow-back" src="images/arrow-back.png"
+                        alt="arrow-back"><span>Everything included in Free,
+                        plus...</span></div>
+                <div class="option-list">
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Access
+                            to GitHub
+                            Codespaces</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Repository
+                            rules</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Multiple
+                            reviewers in pull
+                            requests</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Draft
+                            pull
+                            requests</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Code
+                            owners</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Reqired
+                            reviewers</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Pages
+                            and
+                            Wikis</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Enviroment deployment
+                            branches<br>
+                            and secrets</span></div>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">3,000
+                            CI/CD
+                            minutes/month</span></div>
+                    <p>Free for public repositories</p>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">2GB of
+                            Packages
+                            storage</span></div>
+                    <p>Free for public repositories</p>
+                    <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                            class="option-list-element">Web-based
+                            support</span></div>
+                    <h4>FEATURED ADD-ONS</h4>
+                    <div class="option-list">
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">GitHub Copilot
+                                Access</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">GitHub Codespaces
+                                Access</span></div>
+                    </div>
+            </section>
         </div>
-        <div id="enterprise-frame">
+        <div class="pricing-card" id="enterprise-frame">
             <a id="rec">RECOMMENDED</a>
             <div id="enterprise-card">
                 <h2>Enterprise</h2>
-                <p>Security, compliance,
+                <p>Security, compliance,<br>
                     and flexible deployment</p>
                 <span class="pricing-block">
                     <span class="price">
@@ -68,72 +162,128 @@
                     </span>
                     <span class="per-user">per user/month</span>
                 </span>
-                <a class="wh-btn">
-                    Contact sales
-                </a>
-                <a class="bl-btn">
-                    Start free trial
-                </a>
+                <div id="btn-row">
+                    <a class="wh-btn btn-in-row">
+                        Contact sales
+                    </a>
+                    <a class="bl-btn btn-in-row">
+                        Start free trial
+                    </a>
+                </div>
+                <section class="options">
+                    <div id="everything-included"><img id="arrow-back" src="images/arrow-back.png"
+                            alt="arrow-back"><span>Everything included in Team,
+                            plus...</span></div>
+                    <div class="option-list">
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Data
+                                residency</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Enterprise Managed
+                                Users</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">User
+                                provisioning
+                                through
+                                SCIM</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Enterprise Account to
+                                certanly manage<br> multiple organizations</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Enviroment protection
+                                rules</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Repository
+                                rules</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Audit Log
+                                API</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">SOC1, SOC2, type 2
+                                reports
+                                annually</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">FedRAMP Tailored
+                                Authority to Operate<br>(ATO)</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">SAML
+                                single
+                                sign-on</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">Advanced
+                                auditing</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">GitHub
+                                Connect</span></div>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">50,000 CI/CD
+                                minutes/month</span></div>
+                        <p>Free for public repositories</p>
+                        <div class="option-container"><img src="images/arrow.png" alt="arrow"><span
+                                class="option-list-element">50GB
+                                of Packages
+                                storage</span></div>
+                        <p>Free for public repositories</p>
+                        <h4>EXCLUSIVE ADD-ON</h4>
+                        <div class="option-list">
+                            <div class="option-container"><img src="images/arrow.png"><span
+                                    class="option-list-element">Premium
+                                    support</span></div>
+                        </div>
+                </section>
             </div>
         </div>
     </div>
     <h2 class="add-ons-title">Additional add-ons</h2>
     <div class="add-ons">
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/copilot/copilot-logo.svg"
-                alt="GitHub Copilot Logo">
+            <img class="card-img" src="images/gh.png" alt="GitHub Copilot Logo">
             <h3>GitHub Copilot</h3>
             <p class="add-on-description">
                 Get started for free with up to 2,000 completions and 50 chat requests per month.
             </p>
-            <span>Compare plans</span>
+            <span>Compare plans ></span>
         </div>
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/models/models-logo.svg"
-                alt="GitHub Copilot Logo">
-            <h3>GitHub Copilot</h3>
+            <img class="card-img" src="images/ms.png" alt="GitHub Copilot Logo">
+            <h3>GitHub Models</h3>
             <p class="add-on-description">
-                Get started for free with up to 2,000 completions and 50 chat requests per month.
+                Bring industry-leading AI into your workflow, securely, scalably, and with full developer control.
             </p>
-            <span>Compare plans</span>
+            <span>Learn more ></span>
         </div>
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/models/models-logo.svg"
-                alt="GitHub Copilot Logo">
-            <h3>GitHub Copilot</h3>
+            <img class="card-img" src="images/sc.png" alt="GitHub Copilot Logo">
+            <h3>GitHub Advanced Security</h3>
             <p class="add-on-description">
-                Get started for free with up to 2,000 completions and 50 chat requests per month.
+                Gain peace of mind with our security, privacy, and responsible AI policies.
             </p>
-            <span>Compare plans</span>
+            <span>Learn more ></span>
         </div>
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/models/models-logo.svg"
-                alt="GitHub Copilot Logo">
-            <h3>GitHub Copilot</h3>
+            <img class="card-img" src="images/cs.png" alt="GitHub Copilot Logo">
+            <h3>GitHub Codespaces</h3>
             <p class="add-on-description">
-                Get started for free with up to 2,000 completions and 50 chat requests per month.
+                Starting at $0.18 per hour of compute and $0.07 per GB of storage.
             </p>
-            <span>Compare plans</span>
+            <span>Learn more ></span>
         </div>
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/models/models-logo.svg"
-                alt="GitHub Copilot Logo">
-            <h3>GitHub Copilot</h3>
+            <img class="card-img" src="images/sp.png" alt="GitHub Copilot Logo">
+            <h3>Premium Support</h3>
             <p class="add-on-description">
-                Get started for free with up to 2,000 completions and 50 chat requests per month.
+                Get expert help for Enterprise Cloud and Enterprise—any hour your team needs it.
             </p>
-            <span>Compare plans</span>
+            <span>Learn more ></span>
         </div>
         <div class="add-on-card">
-            <img class="card-img" src="https://github.githubassets.com/images/modules/site/models/models-logo.svg"
-                alt="GitHub Copilot Logo">
-            <h3>GitHub Copilot</h3>
+            <img class="card-img" src="images/fs.png" alt="GitHub Copilot Logo">
+            <h3>Git Large File Storage</h3>
             <p class="add-on-description">
-                Get started for free with up to 2,000 completions and 50 chat requests per month.
+                $5 per month for 50 GB bandwidth and 50 GB of storage.
             </p>
-            <span>Compare plans</span>
+            <span>Learn more ></span>
         </div>
     </div>
-</body>
 
 </html>

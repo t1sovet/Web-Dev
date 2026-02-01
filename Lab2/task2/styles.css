@@ -12,6 +12,7 @@
     --input-border: #363636;
     --primary-blue: #0064e0;
     --btn-hover: #0056b3;
+    --white-hover: #b3b3b3;
 }
 
 body {
@@ -46,10 +47,10 @@ body {
 
 .insta-logo {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 100px;
-    height: 100px;
+    top: 35px;
+    left: 35px;
+    width: 4em;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -58,7 +59,7 @@ body {
     font-size: 32px;
     font-weight: 500;
     line-height: 1.2;
-    margin: 0 20px 40px 20px
+    margin: 40px 40px 40px 40px
 }
 
 .gradient-text {
@@ -74,23 +75,19 @@ body {
     border-radius: 10px;
 }
 
-/* --- RIGHT PANEL --- */
 .right-panel {
     flex: 1;
     background-color: var(--bg-right);
     display: flex;
     justify-content: flex-start;
-    /* Aligns content near center line */
     align-items: center;
     padding: 40px;
-    border-left: 1px solid #333;
-    /* Subtle divider */
+    border-left: 1px solid var(--text-secondary);
 }
 
 .login-container {
     width: 350px;
     margin-left: 50px;
-    /* Spacing from center split */
 }
 
 .form-title {
@@ -99,7 +96,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Inputs */
 .input-field {
     width: 100%;
     padding: 12px;
@@ -107,16 +103,16 @@ body {
     background-color: transparent;
     border: 1px solid var(--input-border);
     border-radius: 6px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 12px;
 }
 
 .input-field:focus {
     border-color: var(--text-secondary);
     outline: none;
+    color: var(--text-primary);
 }
 
-/* Buttons */
 .btn-primary {
     width: 100%;
     padding: 10px;
@@ -151,14 +147,14 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    border: 1px solid #333;
+    border: 1px solid var(--text-secondary);
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 
 .fb-icon {
-    font-weight: bold;
+    height: 16px;
     margin-right: 8px;
 }
 
@@ -174,7 +170,13 @@ body {
 }
 
 .btn-outline:hover {
-    background-color: rgba(0, 100, 224, 0.1);
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.facebook-login:hover {
+    background-color: var(--white-hover);
+    color: white;
 }
 
 .meta-logo {
@@ -184,14 +186,13 @@ body {
     color: white;
 }
 
-/* --- FOOTER --- */
 .footer {
     background-color: var(--bg-right);
-    /* Matches right panel or global dark */
     padding: 20px;
     font-size: 12px;
     color: var(--text-secondary);
     text-align: center;
+    border: var(--text-secondary) solid 1px;
 }
 
 .footer ul {
@@ -211,28 +212,6 @@ body {
     text-decoration: underline;
 }
 
-/* --- RESPONSIVE (Mobile) --- */
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-    }
-
-    .left-panel,
-    .right-panel {
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .content-wrapper,
-    .login-container {
-        margin: 0;
-        text-align: center;
-    }
-
-    .headline {
-        font-size: 24px;
-    }
-}
 
 @media (max-width: 1024px) {
 
@@ -242,6 +221,10 @@ body {
 
     .right-panel {
         justify-content: center;
+    }
+
+    .form-title {
+        text-align: left;
     }
 
     .insta-logo {

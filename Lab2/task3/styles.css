@@ -1,44 +1,81 @@
+/* ===============================
+   CSS styles for task3 T.Ossepyan
+   =============================== */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Mona-sans', sans-serif;
 }
 
-.header {
+sup {
+    color: #505050;
+}
+
+h4 {
+    color: #2188ff;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.head {
     display: flex;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 6em;
 }
 
-.header p {
-    color: #333333;
+.head p {
+    color: #4e4e4e;
     font-family: 'Mona-sans', sans-serif;
     font-size: 16px;
-    margin: auto;
+    margin: 0 15% 1em 15%;
 }
 
-.header h1 {
+.head h1 {
     color: #000000;
     font-family: 'Mona-sans', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    margin-top: 20px;
+    font-weight: 900;
+    margin-top: 80px;
+    width: 80%;
 }
 
-.btn {
-    margin-top: 2em;
+.bl-btn {
+    white-space: nowrap;
+    text-wrap: none;
     background: linear-gradient(#2f2f2f, #1c1c1c);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 1px solid #000000;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
+    margin: 10px 20px 0 20px;
 }
 
-.btn:hover {
+.wh-btn {
+    white-space: nowrap;
+    background: white;
+    color: black;
+    padding: 15px 20px;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 20px 0 20px;
+}
+
+.wh-btn:hover {
+    border: 1px solid #000000;
+}
+
+.bl-btn:hover {
     background: linear-gradient(#505050, #1c1c1c);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -47,21 +84,23 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px 0;
+    margin: 40px 0 40px 0;
 }
 
 
 .pricing-card {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     width: 26%;
-    padding: 20px;
     margin: 10px;
     text-align: center;
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card-head {
+    margin: 20px;
 }
 
 .pricing-card p {
@@ -70,35 +109,48 @@ body {
     margin: 0 40px 20px 40px;
 }
 
+
+
 #enterprise-frame {
     display: flex;
-    align-items: center;
-    background-color: #2a9efc;
+    background-color: #2188ff;
     flex-direction: column;
-    border: 8px solid #2a9efc;
+    border: 8px solid #2188ff;
     border-radius: 10px;
-    margin: none;
     padding: none;
     box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -15px;
+    width: 26%;
 }
 
 #rec {
     font-size: 14px;
+    font-weight: bold;
     color: #ffffff;
-    background-color: #2a9efc;
+    background-color: #2188ff;
+    margin-bottom: 5px;
 }
 
 #enterprise-card {
     display: flex;
     flex-direction: column;
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     text-align: center;
 }
 
-sup {
-    color: #505050;
+#enterprise-card p {
+    color: #555555;
+    font-size: 14px;
+    margin: 0 40px 20px 40px;
+}
+
+#btn-row {
+    display: flex;
+    flex-direction: column;
 }
 
 .number {
@@ -118,9 +170,9 @@ sup {
 }
 
 .add-ons-title {
-    font-size: 3em;
+    font-size: 4em;
     color: #000000;
-    margin-bottom: 20px;
+    margin: 20px 0 40px 0;
     text-align: center;
 }
 
@@ -135,9 +187,9 @@ sup {
 
 .add-on-card {
     border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .add-on-card h3 {
@@ -147,9 +199,82 @@ sup {
 }
 
 .add-on-card p {
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     font-size: 14px;
     color: #555555;
+
+}
+
+.add-on-card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.add-on-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.add-on-card span {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.options {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f8fa;
+    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+    border-end-end-radius: 10px;
+}
+
+.option-list img {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 1em;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.8em;
+}
+
+.option-container {
+    display: flex;
+}
+
+.option-list p {
+    margin-left: 3.5em;
+}
+
+.option-list-element {
+    text-wrap-mode: nowrap;
+    break-inside: auto;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #59636e;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+#everything-included {
+    display: flex;
+    white-space: nowrap;
+    margin: 0 0 2em 20px;
+    font-size: 14px;
+    justify-content: start;
+}
+
+#arrow-back {
+    width: 1em;
+    margin-right: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -157,6 +282,14 @@ sup {
         flex-direction: column;
         align-items: center;
         margin: 0 0 0 0;
+    }
+
+    .option-list {
+        display: none;
+    }
+
+    h4 {
+        display: none;
     }
 
     .pricing-card {
@@ -170,4 +303,19 @@ sup {
     #enterprise-card {
         width: 100%;
     }
+
+    #everything-included {
+        display: none;
+    }
+}
+
+@media (min-width: 1300px) {
+    .btn-in-row {
+        margin: 0 0 0 1em;
+    }
+
+    #btn-row {
+        flex-direction: row;
+    }
+
 }
