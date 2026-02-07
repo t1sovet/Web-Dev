@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 </head>
 
@@ -9,13 +11,17 @@
     <header>
         ToDo List
     </header>
-    <h1>
-        ToDo List
-    </h1>
-    <input type="text" placeholder="New Task" id="taskInput">
-    <input type="button" id="add-button"></button>
-    <main class="all-elements-list">
+    <main>
+        <p>
+            ToDo List
+        </p>
+        <section>
+            <input type="text" placeholder="New Task" id="taskInput">
+            <button id="add-button">Add</button>
+        </section>
+        <ul id="reminders-list">
 
+        </ul>
     </main>
     <script src="script.js"></script>
 </body>
