@@ -5,10 +5,11 @@ const lst = document.getElementById("reminders-list");
 button.addEventListener("click", addTask);
 let remindersCount = 0;
 
+
 function addTask() {
     let txt = input.value;
     remindersCount++;
-    lst.style.border = "1px solid darkgrey";
+
     const reminder = document.createElement("li");
     const reminderrContainer = document.createElement("div");
     reminderrContainer.className = "reminder-container";
@@ -38,6 +39,10 @@ function addTask() {
 
 
     deleteBtn.addEventListener("click", function () {
+        prompt("Delete?(Y/N)");
+        if (prompt.value == "N") {
+            return;
+        }
         lst.removeChild(reminder);
         --remindersCount;
         if (remindersCount == 0) {

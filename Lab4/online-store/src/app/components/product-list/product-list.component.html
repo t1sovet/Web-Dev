@@ -1,0 +1,15 @@
+<!-- product-list.component.html -->
+
+<div class="product-list-container">
+  <header class="catalog-header">
+    <h1>Каталог товаров</h1>
+    <p class="subtitle">Топ товары с Kaspi.kz</p>
+  </header>
+
+  <div class="product-grid">
+    <app-product-card 
+      *ngFor="let product of products" 
+      [product]="product">
+    </app-product-card>
+  </div>
+</div>
