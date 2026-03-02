@@ -1,0 +1,20 @@
+<article class="item-card" [class.highlight]="isHighlited()">
+    <span class="item-id">{{product.id}}</span>
+    <div class="image-container">
+        <img src="{{product.image}}">
+    </div>
+    <h2 class="item-name">{{product.name}}</h2>
+    <p class="item-description">{{product.description}}</p>
+    <p> Likes {{product.likes}}</p>
+    <p> Category: <u (click)="categorySort()">{{product.category.name}}</u></p>
+    <section>
+        <p class="price">{{product.price}} ₸</p>
+        <a class="share-btn" target="_blank" [href]="'https://wa.me/?text=' + urlLink">Share</a>
+        <a [href]="product.link" class="buy-btn" target="_blank">Buy</a>
+        <button (click)="sendIdForDeleting()">Delete</button>
+        <button (click)="likesId.emit(product.id)">like</button>
+    </section>
+    @if (isHighlited()) {
+    <small> Categfrdsgf</small>
+    }
+</article>

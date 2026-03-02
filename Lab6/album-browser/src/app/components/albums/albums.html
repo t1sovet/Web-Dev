@@ -1,0 +1,14 @@
+<h2>Albums</h2>
+
+@if (albarr$ | async; as albums) {
+
+@for (album of albums; track album.id) {
+<div><a [routerLink]="['/albums', album.id]">
+        {{ album.id }} - {{ album.title }}
+    </a>
+</div>
+}
+
+} @else {
+<p>Loading...</p>
+}

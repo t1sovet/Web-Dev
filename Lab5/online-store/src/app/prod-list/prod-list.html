@@ -1,0 +1,8 @@
+<p>prod-list works!</p>
+<div class="product-grid">
+    @for (item of products; track item.id) {
+    <app-prod-item [product]="item" (sendedId)="handleDelete($event)" [selectedCateg]="selectedCateg"
+        (sendedCateg)="handleCateg($event)" (likesId)="handleLike($event)">
+    </app-prod-item>
+    }
+</div>
