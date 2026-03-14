@@ -221,6 +221,112 @@ export class KaspiS {
       likes: 11,
       category: this.Categs[0]
     },
+    {
+      id: 14,
+      name: 'Книга Жеті әлем #1',
+      description: 'Комикс «Жеті әлем #1» — это увлекательное путешествие в мир приключений, созданное для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 600,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/h66/83539609878558.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 31,
+      category: this.Categs[0]
+    },
+    {
+      id: 15,
+      name: 'Книга Жеті әлем #1',
+      description: 'Комикс «Жеті әлем #1» — это увлекательное путешествие в мир приключений, созданное для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 600,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/h66/83539609878558.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 31,
+      category: this.Categs[0]
+    },
+    {
+      id: 16,
+      name: 'Книга Жеті әлем #1',
+      description: 'Комикс «Жеті әлем #1» — это увлекательное путешествие в мир приключений, созданное для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 600,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/h66/83539609878558.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 31,
+      category: this.Categs[0]
+    },
+    {
+      id: 17,
+      name: 'Книга Жеті әлем #1',
+      description: 'Комикс «Жеті әлем #1» — это увлекательное путешествие в мир приключений, созданное для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 600,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/h66/83539609878558.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 31,
+      category: this.Categs[1]
+    },
+    {
+      id: 18,
+      name: 'Книга Кибуиши К.: Тұмар: Тас Сақшысы',
+      description: ' для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 6322,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h67/hc9/84080429826078.jpg?format=preview-large',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 1,
+      category: this.Categs[1]
+    },
+    {
+      id: 19,
+      name: 'Книга Clever: Мяукис. Приключения ведьминого кота',
+      description: 'Комикс «Мяукис. Приключения ведьминого кота» идеально подойдет для первого самостоятельного чтения и понравится детям, которые любят к новым открытиям.',
+      price: 2570,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/pce/p34/19061192.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 12,
+      category: this.Categs[0]
+    },
+    {
+      id: 20,
+      name: 'Книга Жеті әлем #3',
+      description: 'Характеристики Книга Жеті әлем #3, созданное для детей от 6 лет. Яркие иллюстрации и захватывающий сюжет делают его идеальным выбором для юных читателей, стремящихся к новым открытиям.',
+      price: 600,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/hf0/h21/86487996071966.jpg?format=gallery-medium',
+      images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h38/hcb/63829478572062.jpg?format=gallery-large',
+      ],
+      link: 'https://kaspi.kz/shop/p/brid-raisli-k-kouton-s-fnaf-serebrjanye-glaza-graficheskii-roman-108134020/?c=750000000',
+      likes: 32,
+      category: this.Categs[0]
+    },
+
 
   ];
 

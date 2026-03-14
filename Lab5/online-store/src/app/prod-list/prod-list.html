@@ -1,4 +1,4 @@
-<p>prod-list works!</p>
+<p>LIST OF ALL PRODUCTS</p>
 <div class="product-grid">
     @for (item of products; track item.id) {
     <app-prod-item [product]="item" (sendedId)="handleDelete($event)" [selectedCateg]="selectedCateg"

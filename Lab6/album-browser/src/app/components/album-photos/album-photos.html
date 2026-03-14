@@ -1,1 +1,19 @@
-<p>album-photos works!</p>
+<h2>Album Photos</h2>
+
+@if (photos$ | async; as photos) {
+
+<div class="grid">
+    @for (photo of photos; track photo.id) {
+    <div class="photo-card">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+        <p>{{ photo.title }}</p>
+    </div>
+    }
+</div>
+
+} @else {
+<p>Loading photos...</p>
+}
+
+<br />
+<button (click)="goBack()">Back</button>

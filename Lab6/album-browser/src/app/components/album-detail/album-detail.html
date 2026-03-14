@@ -1,19 +1,33 @@
-<h2>Album Details</h2>
+<div class="details-container">
 
-@if (album$ | async; as album) {
+    <h2>Album Details</h2>
 
-<p><strong>ID:</strong> {{ album.id }}</p>
-<p><strong>User ID:</strong> {{ album.userid }}</p>
+    @if (album$ | async; as album) {
 
-<label>Title:</label>
-<input [value]="album.title" />
+    <div class="details-card">
 
-<br /><br />
+        <div class="info">
+            <p><strong>ID:</strong> {{ album.id }}</p>
+            <p><strong>User ID:</strong> {{ album.id }}</p>
+        </div>
 
-<button (click)="save()">Save</button>
-<button (click)="goToPhoto(album.id)">View Photos</button>
-<button (click)="goBack()">Back</button>
+        <div class="form-group">
+            <label>Title</label>
+            <input [(ngModel)]="album.title">
+        </div>
 
-} @else {
-<p>Loading...</p>
-}
+        <div class="button-group">
+            <button class="primary" (click)="save()">Save</button>
+            <button class="secondary" (click)="goToPhoto(album.id)">
+                View Photos
+            </button>
+            <button class="danger" (click)="goBack()">Back</button>
+        </div>
+
+    </div>
+
+    } @else {
+    <p>Loading...</p>
+    }
+
+</div>

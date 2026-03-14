@@ -8,16 +8,16 @@ import { Photo } from '../model/photo.model';
   providedIn: 'root',
 })
 export class AlbumService {
-  url = 'https://jsonplaceholder.typicode.com/albums';
+  url = 'https://jsonplaceholder.typicode.com/';
 
   http = inject(HttpClient);
 
   getAlbums(): Observable<Album[]> {
-    return this.http.get<Album[]>(this.url);
+    return this.http.get<Album[]>(`${this.url}/albums`);
   }
 
   getAlbum(id: number): Observable<Album> {
-    return this.http.get<Album>(`${this.url}/${id}`);
+    return this.http.get<Album>(`${this.url}/albums/${id}`);
   }
 
   getAlbumPhotos(id: number): Observable<Photo[]> {
@@ -25,16 +25,14 @@ export class AlbumService {
 
   }
 
-  updateAlbum(album: Album): Observable<Album> {
-    return this.http.put<Album>(
-      `${this.url}/albums/${album.id}`,
-      album
-    );
-  }
+  updateAlbum(album: Album): {
+    albCopy: Observable<Album> = this.getAlbum(album.id);
+    albCopy.title = album.title;
+}
 
-  deleteAlbum(id: number): Observable<void> {
-    return this.http.delete<void>(
-      `${this.url}/albums/${id}`
-    );
-  }
+deleteAlbum(id: number): Observable < void> {
+  return this.http.delete<void>(
+    `${this.url}/albums/${id}`
+  );
+}
 }

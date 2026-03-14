@@ -10,7 +10,7 @@ describe('Albums', () => {
     await TestBed.configureTestingModule({
       imports: [Albums]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(Albums);
     component = fixture.componentInstance;

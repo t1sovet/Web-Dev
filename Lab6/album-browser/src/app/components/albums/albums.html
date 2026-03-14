@@ -1,14 +1,20 @@
-<h2>Albums</h2>
+<div class="albums-container">
+    <h2>Albums</h2>
 
-@if (albarr$ | async; as albums) {
+    @if (albarr$ | async; as albums) {
 
-@for (album of albums; track album.id) {
-<div><a [routerLink]="['/albums', album.id]">
-        {{ album.id }} - {{ album.title }}
-    </a>
+    <div class="album-grid">
+        @for (album of albums; track album.id) {
+        <div class="album-card">
+            <a [routerLink]="['/albums', album.id]">
+                <span class="album-id">#{{ album.id }}</span>
+                <span class="album-title">{{ album.title }}</span>
+            </a>
+        </div>
+        }
+    </div>
+
+    } @else {
+    <p class="loading">Loading...</p>
+    }
 </div>
-}
-
-} @else {
-<p>Loading...</p>
-}

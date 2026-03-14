@@ -4,11 +4,12 @@ import { AlbumService } from '../../services/album-service';
 import { AsyncPipe } from '@angular/common';
 import { Album } from '../../model/album.model';
 import { Observable } from 'rxjs';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-album-detail',
   standalone: true,
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, FormsModule],
   templateUrl: './album-detail.html',
   styleUrls: ['./album-detail.css'],
 })
@@ -18,20 +19,16 @@ export class AlbumDetail implements OnInit {
   route = inject(ActivatedRoute);
 
   album$!: Observable<Album>;
-
+  isLoading = false;
   constructor(private albumService: AlbumService) { }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     console.log('Route ID:', id);
-
     this.album$ = this.albumService.getAlbum(Number(id));
   }
-
   save() {
-
-  }
-
+  };
   goToPhoto(id: number) {
     this.router.navigate(['/albums', id, 'photos']);
   }
