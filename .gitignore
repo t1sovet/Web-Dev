@@ -1,1 +1,10 @@
 .DS_Store node_modules
+# Environments
+venv/
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+
+# Databases
+db.sqlite3
