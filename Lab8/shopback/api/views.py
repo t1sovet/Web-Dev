@@ -1,115 +1,117 @@
+import json
 from django.http import JsonResponse
 from .models import Product, Category
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.decorators import action
+from django.views.decorators.csrf import csrf_exempt
 from .serializers import *
+from rest_framework.permissions import AllowAny
+
+
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
-    ser_class = CategorySerializer
+    serializer_class = CategorySerializer
+    permission_classes = [AllowAny]
 
-    @action(detail=True, methods=['get'])
-    def products(self, request, pk=None):
-        category = self.get_object()
-        products = Product.objects.filter(category=category)
-        serializer = ProductSerializer(products, many=True)
-        return Response(serializer.data)
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+    permission_classes = [AllowAny]
 
-# /api/
-def index(request):
-    return JsonResponse({"message": "Welcome to API"})
+# # /api/
 
-
-# /api/products/
-def prods(request):
-    products = Product.objects.all()
-
-    data = []
-    for p in products:
-        data.append({
-            "id": p.id,
-            "name": p.name,
-            "price": p.price,
-            "description": p.description,
-            "count": p.count,
-            "is_active": p.is_active,
-            "category_id": p.category.id
-        })
-
-    return JsonResponse(data, safe=False)
+# def index(request):
+#     return JsonResponse({"message": "Welcome to API"})
 
 
-# /api/products/<id>/
-def prodsid(request, product_id):
-    try:
-        p = Product.objects.get(id=product_id)
+# # /api/products/
+# def prods(request):
+#     products = Product.objects.all()
 
-        data = {
-            "id": p.id,
-            "name": p.name,
-            "price": p.price,
-            "description": p.description,
-            "count": p.count,
-            "is_active": p.is_active,
-            "category_id": p.category.id
-        }
+#     data = []
+#     for p in products:
+#         data.append({
+#             "id": p.id,
+#             "name": p.name,
+#             "price": p.price,
+#             "description": p.description,
+#             "count": p.count,
+#             "is_active": p.is_active,
+#             "category_id": p.category.id
+#         })
 
-        return JsonResponse(data)
-
-    except Product.DoesNotExist:
-        return JsonResponse({"error": "Product not found"}, status=404)
+#     return JsonResponse(data, safe=False)
 
 
-# /api/categories/
-def categs(request):
-    categories = Category.objects.all()
+# # /api/products/<id>/
+# def prodsid(request, product_id):
+#     try:
+#         p = Product.objects.get(id=product_id)
 
-    data = []
-    for c in categories:
-        data.append({
-            "id": c.id,
-            "name": c.name
-        })
+#         data = {
+#             "id": p.id,
+#             "name": p.name,
+#             "price": p.price,
+#             "description": p.description,
+#             "count": p.count,
+#             "is_active": p.is_active,
+#             "category_id": p.category.id
+#         }
 
-    return JsonResponse(data, safe=False)
+#         return JsonResponse(data)
 
-def categid(request, category_id):
-    try:
-        c = Category.objects.get(id=category_id)
+#     except Product.DoesNotExist:
+#         return JsonResponse({"error": "Product not found"}, status=404)
 
-        data = {
-            "id": c.id,
-            "name": c.name
-        }
 
-        return JsonResponse(data)
+# # /api/categories/
+# def categs(request):
+#     categories = Category.objects.all()
 
-    except Category.DoesNotExist:
-        return JsonResponse({"error": "Category not found"}, status=404)
+#     data = []
+#     for c in categories:
+#         data.append({
+#             "id": c.id,
+#             "name": c.name
+#         })
 
-# /api/categories/<id>/products/
-def categprods(request, category_id):
-    try:
-        category = Category.objects.get(id=category_id)
-        products = Product.objects.filter(category=category)
+#     return JsonResponse(data, safe=False)
 
-        data = []
-        for p in products:
-            data.append({
-                "id": p.id,
-                "name": p.name,
-                "price": p.price,
-                "description": p.description,
-                "count": p.count,
-                "is_active": p.is_active,
-            })
+# def categid(request, category_id):
+#     try:
+#         c = Category.objects.get(id=category_id)
 
-        return JsonResponse(data, safe=False)
+#         data = {
+#             "id": c.id,
+#             "name": c.name
+#         }
 
-    except Category.DoesNotExist:
-        return JsonResponse({"error": "Category not found"}, status=404)
+#         return JsonResponse(data)
+
+#     except Category.DoesNotExist:
+#         return JsonResponse({"error": "Category not found"}, status=404)
+
+# # /api/categories/<id>/products/
+# def categprods(request, category_id):
+#     try:
+#         category = Category.objects.get(id=category_id)
+#         products = Product.objects.filter(category=category)
+
+#         data = []
+#         for p in products:
+#             data.append({
+#                 "id": p.id,
+#                 "name": p.name,
+#                 "price": p.price,
+#                 "description": p.description,
+#                 "count": p.count,
+#                 "is_active": p.is_active,
+#             })
+
+#         return JsonResponse(data, safe=False)
+
+#     except Category.DoesNotExist:
+#         return JsonResponse({"error": "Category not found"}, status=404)
     
