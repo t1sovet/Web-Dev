@@ -1,6 +1,23 @@
 from django.http import JsonResponse
 from .models import Product, Category
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from .serializers import *
 
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    ser_class = CategorySerializer
+
+    @action(detail=True, methods=['get'])
+    def products(self, request, pk=None):
+        category = self.get_object()
+        products = Product.objects.filter(category=category)
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
 
 # /api/
 def index(request):
@@ -95,3 +112,4 @@ def categprods(request, category_id):
 
     except Category.DoesNotExist:
         return JsonResponse({"error": "Category not found"}, status=404)
+    
